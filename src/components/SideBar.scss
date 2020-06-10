@@ -1,0 +1,66 @@
+.objective__container {
+  display: flex;
+  box-shadow: 5px 5px 6px #b2b3b4;
+}
+
+.objectiveList__wrapper {
+  background: #fad05a;
+  height: 436px;
+  width: 30%;
+  overflow-y: scroll;
+}
+
+.objective__title {
+  margin: 1rem;
+  background: white;
+  padding: 2rem;
+  cursor: pointer;
+}
+
+.statusButton {
+  font-size: 22px;
+  margin-right: 1rem;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.objective__status {
+  position: relative;
+  bottom: 2rem;
+    & .objective__done {
+      color: #6ac258;
+    }
+    & .objective__notDone {
+      color:#ee5235;
+    }
+    & .objective__nextClass {
+      color: #378aa3;
+    }
+}
+
+.objective__green {
+  border: 3px solid green;
+}
+
+.objective__red {
+  border: 3px solid red;
+}
+
+.objective__blue {
+  border: 3px solid blue;
+}
+
+.objective__status__wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width:460px){
+  .objectiveList__wrapper {
+    width: 100%;
+    height: auto;
+    overflow-y: unset;
+  }
+}

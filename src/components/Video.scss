@@ -1,0 +1,42 @@
+.classflow__label {
+    background: #101c29;
+    color: #959ca7;
+}
+
+.user {
+    position: absolute;
+    right: 12rem;
+    top: 20rem;
+    z-index: 1;
+    background: white;
+    cursor: pointer;
+}
+
+.video {
+    width: 100%;
+    height: 100%;
+}
+
+.user__classflow {
+    font-size: 38px;
+}
+
+.video__wrapper {
+    width: 70%;
+}
+
+@media screen and (max-width:460px){
+    .video {
+        width: 268px;
+        height: 147px;
+    }
+
+    .video__wrapper {
+        position: absolute;
+        top: 52rem;
+    }
+
+    .user {
+        position: static;
+    }
+}

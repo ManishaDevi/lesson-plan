@@ -1,0 +1,75 @@
+.App {
+  text-align: center;
+  background: #e6e7e8;
+  border: 1px solid transparent;
+  margin: 8rem;
+  padding: 2rem;
+}
+
+.lesson__header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.lesson__label {
+  margin-right:1rem;
+  font-size: 18px;
+  font-weight: 600;
+
+}
+.lesson__numbers__list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+.lesson__numbers {
+  margin-right: 1rem;
+  border-radius: 50%;
+  box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.1);
+  font-size: 18px;
+  font-weight: 600;
+  align-items: center;
+  background: #f3983e;
+  border: none;
+  outline: none;
+  cursor: pointer;
+    &--active {
+      background: white;
+    }
+    &--completed {
+      background: red;
+    }
+}
+
+.lesson__title {
+  color: #bb305c;
+  margin: 0;
+}
+
+.user__icon {
+  font-size: 80px;
+}
+
+@media screen and (max-width:460px){
+  .App {
+      margin: 0;
+  }
+
+  .user__icon {
+    font-size: 38px;
+  }
+  
+  .lesson__title {
+    font-size: 16px;
+  }
+
+  .lesson__numbers {
+    margin-right: 0.4rem;
+  }
+
+  .lesson__numbers__list {
+    display: flex;
+    margin: 1rem;
+  }
+}
